@@ -32,15 +32,15 @@ class Cities extends React.Component{
 function mapStateToProps(state) {
     console.log("mapStatetoProps");
     return {
-        citiesList: state.citiesReducer.citiesList};
+        citiesList: state.citiesReducer.citiesList
+    };
   }
 
   function mapActionToProps(dispatch) {
     return {
         getCitiesList: function () {
             displayCities()
-                .then(result => dispatch(displayingCities(result)))
-                ;
+                .then(result => dispatch(displayingCities(result)));
         }
 
     
