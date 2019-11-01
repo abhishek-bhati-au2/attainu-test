@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import rootReducer from './reducers/rootReducer';
+import citiesReducer from './reducers/citiesReducer';
 
 function configureStore() {
     return createStore(
